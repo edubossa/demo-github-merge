@@ -10,13 +10,15 @@ public class Monitor {
     private Boolean auto = Boolean.FALSE;
 
     public Monitor(String toke, String button, Boolean auto) {
+        System.out.println("Monitor.Monitor");
         this.toke = toke;
         this.button = button;
         this.auto = auto;
     }
 
     public String getButton() {
-        return "TAG" + button + "TAG";
+        System.out.println("Monitor.getButton EWS");
+        return "TAG" + button + "TAG 099";
     }
 
     public void setButton(String button) {
@@ -24,10 +26,12 @@ public class Monitor {
     }
 
     public Boolean getAuto() {
+        System.out.println("Monitor.getAuto");
         return auto;
     }
 
     public void setAuto(Boolean auto) {
+        System.out.println("Monitor.setAuto");
         this.auto = auto;
     }
 
