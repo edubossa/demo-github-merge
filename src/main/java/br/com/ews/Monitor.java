@@ -17,11 +17,12 @@ public class Monitor {
     }
 
     public String getButton() {
-        System.out.println("Monitor.getButton EWS");
-        return "TAG" + button + "TAG 099";
+        System.out.println("Monitor.getButton");
+        return "TAG" + button + "TAG verbose temp 099";
     }
 
     public void setButton(String button) {
+        System.out.println("Monitor.setButton");
         this.button = button;
     }
 
