@@ -16,10 +16,12 @@ public class Monitor {
     }
 
     public String getButton() {
-        return "TAG" + button + "TAG";
+        System.out.println("Monitor.getButton");
+        return "TAG" + button + "TAG verbose temp";
     }
 
     public void setButton(String button) {
+        System.out.println("Monitor.setButton");
         this.button = button;
     }
 
