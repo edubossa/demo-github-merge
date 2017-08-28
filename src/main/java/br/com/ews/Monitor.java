@@ -5,11 +5,18 @@ package br.com.ews;
  */
 public class Monitor {
 
+    private String toke;
     private String button;
     private Boolean auto = Boolean.FALSE;
 
+    public Monitor(String toke, String button, Boolean auto) {
+        this.toke = toke;
+        this.button = button;
+        this.auto = auto;
+    }
+
     public String getButton() {
-        return button;
+        return "TAG" + button + "TAG";
     }
 
     public void setButton(String button) {
@@ -27,7 +34,8 @@ public class Monitor {
     @Override
     public String toString() {
         return "Monitor{" +
-                "button='" + button + '\'' +
+                "toke='" + toke + '\'' +
+                ", button='" + button + '\'' +
                 ", auto=" + auto +
                 '}';
     }
